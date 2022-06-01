@@ -6,10 +6,10 @@ function highlight (table) {
 
         let statusCell = trs[i].cells[3];
         if (statusCell.dataset.available === 'true') {
-            statusCell.classList.add('available');
+            trs[i].classList.add('available');
 		} 
 		if (statusCell.dataset.available === 'false') {
-            statusCell.classList.add('unavailable');
+            trs[i].classList.add('unavailable');
         }
       
       if (!statusCell.dataset.available) {
